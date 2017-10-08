@@ -2126,7 +2126,10 @@ var VimeoPlayer = function() {
         return e === !0 || e === !1 ? Number(e) : "null" === e ? null : e
     }
     function Je(e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : document.cookie;
+        var t = null;
+        try {
+            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : document.cookie
+        } catch (e) {};
         try {
             if (t && "" !== t)
                 return t.split(";").reduce(function(t, n) {
