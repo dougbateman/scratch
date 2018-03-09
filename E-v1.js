@@ -1,3 +1,4 @@
+window.wistiaDisableCookies=true;
 (function(e) {
     var n = {};
     function t(i) {
@@ -4683,8 +4684,8 @@
         return oe(t) ? (a.info(P),
         'engines/two_stroke_video.js') : n.secondaryVideoUrl ? (a.info(P),
         'engines/two_stroke_video.js') : r && i.nativeHls ? (a.info(k),
-        'engines/native_hls_video.js') : r ? (a.info(E),
-        'engines/hls_video.js') : (a.info(C),
+        'engines/native_hls_video.js') : /*r ? (a.info(E),
+        'engines/hls_video.js') :*/ (a.info(C),
         'engines/manual_quality_video.js')
     }, ae = function(e, t, n) {
         return {
